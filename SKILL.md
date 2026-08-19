@@ -1,5 +1,5 @@
 ---
-name: research-paper-writing
+name: tc-writing-style
 description: Draft, revise, and review applied transportation and low-altitude mobility papers, including travel behavior, demand forecasting, transport planning, UAM/eVTOL, GIS, infrastructure siting, survey/econometric analysis, optimization, and empirical case studies. Use when the paper must connect a real mobility or planning problem to defensible data, methods, findings, and stakeholder or policy implications; do not default to an ML-style task-model-benchmark narrative.
 ---
 

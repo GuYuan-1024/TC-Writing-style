@@ -32,10 +32,10 @@ TC-Writing-style/
 Clone the repository into the Codex skills directory:
 
 ```bash
-git clone https://github.com/GuYuan-1024/TC-Writing-style.git ~/.codex/skills/research-paper-writing
+git clone https://github.com/GuYuan-1024/TC-Writing-style.git ~/.codex/skills/tc-writing-style
 ```
 
-If `research-paper-writing` already exists, back it up or remove it before cloning.
+The valid Codex skill identifier is `tc-writing-style`; the UI display name is `TC-Writing-style`.
 
 ## Reference papers
 
