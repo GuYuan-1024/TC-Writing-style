@@ -11,6 +11,8 @@ A Codex skill for drafting, revising, and reviewing applied transportation and l
 - Distinguishes observed, estimated, calibrated, borrowed, expert-assigned, and scenario-based quantities.
 - Adds an assumption ledger for prospective UAM/eVTOL and parameterized planning studies.
 - Includes a reviewer-facing checklist for evidence, transport meaning, spatial impacts, planning use, and transferability.
+- Asks once per use whether format checking is needed, avoiding unnecessary format-analysis tokens.
+- Supports either a location-specific compliance report or automatic formatting of a safe manuscript copy, based on `【定稿】英文投稿模板.docx`.
 
 ## Repository structure
 
@@ -24,7 +26,8 @@ TC-Writing-style/
     |-- study-design-methods.md
     |-- results-discussion.md
     |-- conclusion-policy.md
-    `-- domain-review.md
+    |-- domain-review.md
+    `-- submission-format.md
 ```
 
 ## Installation

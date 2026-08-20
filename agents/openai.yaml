@@ -1,4 +1,4 @@
 interface:
   display_name: "TC-Writing-style"
   short_description: "Transportation and low-altitude paper writing"
-  default_prompt: "Use $tc-writing-style to revise this transportation paper with decision-driven narrative logic."
+  default_prompt: "Use $tc-writing-style to revise this transportation paper with decision-driven narrative logic, and first ask whether I want no format check, a report-only format audit, or automatic formatting of a copy."
