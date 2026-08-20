@@ -11,6 +11,18 @@ Write the paper as an applied transportation argument: a consequential mobility 
 
 The narrative patterns in this skill were synthesized from two *Travel Behaviour and Society* papers listed in [references/narrative-logic.md](references/narrative-logic.md). Generalize their useful logic. Do not copy their wording, force their exact section structure, or reproduce their weaknesses.
 
+## Format-Check Gate
+
+At the start of **every invocation**, ask once whether the user wants the manuscript checked against the English submission template. Keep the question compact and offer exactly these choices:
+
+1. **No format check** — continue the writing/revision task without loading the format specification. Recommend this when the user only needs content or argument work.
+2. **Report only** — inspect formatting and return a location-specific noncompliance list; do not edit the manuscript.
+3. **Auto-fix a copy** — let Codex correct formatting in a duplicate of the manuscript and return the revised file plus a change summary.
+
+If the user has already explicitly requested one of these modes in the current message, do not ask again. If the user chooses no format check, do not read [references/submission-format.md](references/submission-format.md), inspect document layout, render pages, or spend tokens on format analysis. Continue the substantive task immediately.
+
+Only after the user selects **Report only** or **Auto-fix a copy**, read [references/submission-format.md](references/submission-format.md) in full and follow its workflow. A complete layout audit or automatic repair requires an editable `.docx`; explain which checks are unavailable if the input is plain text or PDF. Never overwrite the source manuscript. When a journal's official author instructions conflict with this local template, flag the conflict and treat the journal instructions as controlling after the user confirms the target journal.
+
 ## Choose the Research Mode
 
 Identify the dominant mode before editing. A paper may combine modes.
@@ -66,6 +78,7 @@ If one item is missing, flag it instead of hiding the gap with polished prose.
 5. For prospective or parameter-heavy studies, create or update the assumption ledger.
 6. Run the reviewer check in [references/domain-review.md](references/domain-review.md).
 7. Weaken, qualify, relocate, or remove claims that outrun the evidence.
+8. Run the format workflow only when the user opted in at the format-check gate.
 
 Do not impose a full-paper rewrite when the user requests only diagnosis, polishing, or a single section. Preserve the user's substantive choices unless evidence or internal consistency requires a change, and explain such changes.
 
@@ -77,6 +90,7 @@ Do not impose a full-paper rewrite when the user requests only diagnosis, polish
 - Results and Discussion: [references/results-discussion.md](references/results-discussion.md)
 - Conclusion and Policy/Planning Implications: [references/conclusion-policy.md](references/conclusion-policy.md)
 - Whole-paper and adversarial review: [references/domain-review.md](references/domain-review.md)
+- Submission formatting and English mechanics (load only after opt-in): [references/submission-format.md](references/submission-format.md)
 
 ## Adaptive Output
 
@@ -88,3 +102,5 @@ Match the response to the request.
 - **Major empirical claims:** use `Claim | Evidence | Interpretation | Boundary | Status` where status is `supported`, `needs qualification`, or `needs evidence`.
 
 Keep auxiliary analysis concise unless the user asks for a full audit.
+
+For **Report only**, use `Location | Current formatting | Required formatting | Suggested fix | Severity | Confidence`, ordered from global/page-level problems to local issues. For **Auto-fix a copy**, preserve text, citations, fields, equations, comments, and tracked changes unless a specific correction requires otherwise; render and visually inspect every output page, then provide the revised `.docx`, a concise modification log, and any unresolved items requiring human judgment.
