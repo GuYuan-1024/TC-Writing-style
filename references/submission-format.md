@@ -53,6 +53,23 @@ Load this file only after the user opts into **Report only** or **Auto-fix a cop
 - Put the caption below the figure and center it. Format as `Fig. N. Caption`: `Fig. N.` bold, descriptive title regular, with the period after both `Fig` and the number.
 - Group multi-panel figures consistently and use concise, self-contained captions/subcaptions.
 
+### Publication-scale sizing for programmable figures
+
+Use this subsection only when a figure was created with a method that permits the physical canvas to be regenerated or explicitly resized, such as Python/Matplotlib and comparable plotting software. Its purpose is narrowly to correct figure text that becomes too small after the image is inserted and scaled in Word. Do **not** apply this remedy to photographs, screenshots, scanned figures, fixed third-party images, or other artwork whose canvas and typography cannot be independently regenerated. For those files, report the readability problem and request an editable source or use a different appropriate remedy.
+
+- Diagnose the Word display size before recommending larger code fonts. Scaling a figure scales its labels, ticks, legends, annotations, markers, and line widths together.
+- Estimate the displayed font size with `effective font size = code font size × final Word width / plotting canvas width`, using the same physical unit for both widths.
+- Determine whether the intended placement is single-column, double-column/full text width, or supplementary full page. The journal's final column width controls.
+- For this skill's standard A4 Word layout, the usable text width is about 15–16 cm. For a full-text-width programmable figure, start near 6.2–6.4 in (15.7–16.3 cm) and insert it at approximately the same width so Word applies no more than about 10–15% scaling. Treat 6.4 in as an A4 full-width default, not a universal journal rule.
+- For a typical single-column figure, design near the actual column width, commonly about 3.2–3.5 in (8–9 cm), rather than generating a 6.4 in or 12 in canvas and shrinking it heavily.
+- Standardize the intended width across comparable figures; adapt height to information density, category count, and panel count. Do not force identical heights.
+- At final Word size, target approximately 10–11.5 pt for axis labels and panel labels, 8.5–10 pt for ticks, legends, and numerical annotations, and 8.5–9.5 pt for dense subplot titles. Avoid effective text below 8 pt unless the target journal explicitly permits it.
+- When text is too small, fix in this order: match canvas width to final Word width; remove unnecessary whitespace; shorten or wrap long labels; adjust height; then fine-tune fonts; finally rebalance markers and line widths.
+- For multi-panel plots, share axes where appropriate, suppress redundant tick labels, use shared axis labels and one shared legend, and move explanatory prose to the external caption.
+- Do not embed the full manuscript caption (`Fig. N. ...`) in the plotting canvas. Retain only necessary analytical labels and panel headings inside the image.
+- Increasing DPI improves raster resolution but does not enlarge physical text. Prefer a supported vector format such as PDF for the editable output and add a high-resolution PNG only when required by the journal or Word workflow.
+- Judge the result at its intended physical size in the rendered Word page, without zooming. In auto-fix mode, regenerate the programmable figure from its source code when available, replace it in the manuscript copy, and verify the final page rendering. Never claim this problem was corrected merely by changing Word's image width if the resulting figure still has unreadable text.
+
 ## Equations and algorithms
 
 - Inline equations must match surrounding body size and line height; use an equation editor rather than image snapshots.
